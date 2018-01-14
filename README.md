@@ -20,7 +20,7 @@ import (
 )
 
 func main() {
-  for domain := tlds.StreamAllDomains() {
+  for domain := range tlds.StreamAllDomains() {
     fmt.Println(domain)
   }
 }
